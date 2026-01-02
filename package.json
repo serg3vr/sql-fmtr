@@ -14,10 +14,16 @@
   "contributes": {
     "commands": [
       {
-        "command": "sql-fmtr.helloWorld",
-        "title": "Hello World"
+        "command": "sql-fmtr.sqlFormat",
+        "title": "SQL-Formatter: Format"
       }
-    ]
+    ],
+    "keybindings": [{
+      "command": "sql-fmtr.sqlFormat",
+      "key": "ctrl+s ctrl+f",
+      "mac": "cmd+s cmd+f",
+      "when": "editorHasSelection"
+    }]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",

@@ -19,7 +19,7 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('Hello World from sql-fmtr! with TS');
 	}); */
 
-	const disposable = vscode.commands.registerCommand('sql-fmtr.helloWorld', function () {
+	const disposable = vscode.commands.registerCommand('sql-fmtr.sqlFormat', function () {
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) return;
 
